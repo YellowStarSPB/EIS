@@ -1,0 +1,29 @@
+@import './assets/reset';
+@import './assets/fonts';
+@import './assets/colors';
+
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: var(--prime-color);
+  background: var(--bg-color);
+}
+#root {
+  height: 100vh;
+  max-height: 100vh;
+}
+.counters {
+  height: 100%;
+  padding: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+  //.counters__title
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 16px;
+  }
+}

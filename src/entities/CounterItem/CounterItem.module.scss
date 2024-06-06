@@ -1,0 +1,55 @@
+.item {
+  position: relative;
+  display: grid;
+  padding: 16px 12px;
+  grid-template-columns: 48px 120px 160px 128px 146px 430px auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--prime-color);
+  background-color: #fff;
+  border-bottom: 1px solid #e0e5eb;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: #f7f8f9;
+    .deliteItemButton {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .itemType {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+    }
+    &.cold {
+      &::before {
+        background: url(../../img/cold-water-icon.svg) center/contain no-repeat;
+      }
+    }
+    &.hot {
+      &::before {
+        background: url(../../img/hot-water-icon.svg) center/contain no-repeat;
+      }
+    }
+  }
+
+  .deliteItemButton {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
+
+
+
+

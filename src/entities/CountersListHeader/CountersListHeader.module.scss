@@ -1,0 +1,13 @@
+.countersListHeader {
+  display: grid;
+  grid-template-columns: 48px 120px 160px 128px 146px 430px auto;
+  background-color: var(--header-bg);
+  .headerItem {
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: var(--gray-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
